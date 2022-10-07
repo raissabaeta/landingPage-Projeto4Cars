@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: head;
+    font-family: Lato,sans-serif;
+}
+
+header > a{
+    font-size: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #222;
+}
+
+header > img{
+    width: 200px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 100px 400px 100px;
+    grid-template-columns: repeat(3, 1fr) 180px;
+    width: 1280px;
+    margin: 30px auto;
+    height: 100vh;
+
+    grid-template-areas: 'head head head head'
+                         'main main main side'
+                         'box1 box2 box3 side'
+                         'foot foot foot foot';    
+}
+
+main {
+    grid-area: main;
+    font-family: Lato,sans-serif;
+    font-size: 30px;
+    line-height: 20px;
+    margin: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.small-box1 {
+    grid-area: box1;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #ebecec;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.small-box1 > ul {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: #ed335b;
+    border-radius: 10px;
+}
+
+.small-box2 {
+    grid-area: box2;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #ebecec;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.small-box2 > img, .small-box3 > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    border: 10px solid #ed335b
+}
+
+.small-box1 > h2, .small-box2 > h2, .small-box3 > h2 {
+    line-height: 50px;
+    text-align: center;
+}
+
+.small-box2 > p, .small-box3 > p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.small-box2 > h3, .small-box3 > h3{
+    width: 140px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #ed335b;
+    font-family: Roboto,sans-serif;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    border-radius:10px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.small-box3 {
+    grid-area: box3;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #ebecec;
+    border-radius: 10px;
+}
+
+h3:hover {
+    color: white;
+}
+aside {
+    grid-area: side;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e1e6ee;
+    border-radius: 10%;
+}
+
+aside > h4 {
+    background-color: #ed335b;
+    color: #ffffff;
+    height: 100px;
+    text-align: center;
+    padding: 40px 24px;
+    font-family: Roboto,sans-serif;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+h5{
+    color: #222;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    line-height: 16px;
+    
+}
+
+aside > a {
+    margin: auto;
+    display: block;
+    cursor: pointer;
+}
+
+/* Footer da páginas com as informações da empresa */
+
+footer{
+    grid-area: foot;
+    font-family: Lato,sans-serif;
+    color: lightslategray;
+    line-height: 30px;
+    padding: 50px;
+    font-size: 14px;
+}
