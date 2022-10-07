@@ -100,7 +100,12 @@ li:hover{
     border-radius: 50%;
     margin: auto;
     display: block;
-    border: 10px solid #ed335b
+    border: 6px solid #ed335b
+    
+}
+
+.img-sandero {
+    object-fit: cover; 
 }
 
 .small-box1 > h2, .small-box2 > h2, .small-box3 > h2 {
@@ -130,6 +135,10 @@ li:hover{
     margin-top: 20px;
     font-size: 20px;
 }
+
+h3{
+    padding: 4px;
+}
 .small-box3 {
     grid-area: box3;
     margin-right: 10px;
@@ -146,6 +155,11 @@ h3:hover {
 }
 
 /* Aside com aviso de IMPORTANTE */
+
+div {
+    display: flex;
+    flex-direction: column;
+}
 
 aside {
     grid-area: side;
@@ -166,7 +180,7 @@ aside > h4 {
     text-decoration: underline;
 }
 
-h5{
+h5 {
     color: #222;
     font-size: 16px;
     text-align: center;
@@ -175,7 +189,7 @@ h5{
     
 }
 
-aside > a {
+div > a {
     margin: auto;
     display: block;
     cursor: pointer;
@@ -207,12 +221,32 @@ footer{
       margin: 0;
       display: flex;
       flex-direction: column;
+
+}
+
+    .small-box1, .small-box2, .small-box3 {
+        margin-top: 20px;
+    }
+    main{
+        line-height: 30px;
+        text-align: center;
+
     }
 
-    main{
-        text-align: center;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-  
+
+    a > img {
+        margin-left: 10px;
+    }
+    
+    aside {
+        margin-top: 10px;
+    }
+    
     footer {
       display: flex;
       justify-content: space-evenly;
