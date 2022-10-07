@@ -191,7 +191,7 @@ h5 {
 
 div > a {
     margin: auto;
-    display: block;
+    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -213,7 +213,7 @@ footer{
       box-sizing: border-box;
     }
 
-    header > a{
+    header > a {
         display: none;
     }
     .container {
@@ -235,11 +235,11 @@ footer{
 
     div {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
+        margin: auto;
     }
 
-    a > img {
+    div > a {
         margin-left: 10px;
     }
     
